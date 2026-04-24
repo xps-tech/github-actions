@@ -7,7 +7,10 @@ import childProcess from 'node:child_process';
 const cwd = new URL('.', import.meta.url).pathname;
 const exec = util.promisify(childProcess.exec);
 
-const token = process.env.GITHUB_TOKEN ?? process.env.NODE_AUTH_TOKEN;
+// Prefer NODE_AUTH_TOKEN (may be set to a PAT with broader package scope,
+// e.g. via DEPENDABOT_NPM_TOKEN in Dependabot-triggered workflows).
+// Fall back to GITHUB_TOKEN for regular PR/push workflows.
+const token = process.env.NODE_AUTH_TOKEN ?? process.env.GITHUB_TOKEN;
 if (token) {
   await exec(`npm config set //npm.pkg.github.com/:_authToken "${token}"`, { cwd });
 }
