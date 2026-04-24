@@ -98,7 +98,7 @@ describe('Test name and resource length', async () => {
         },
       },
     };
-    // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+    // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
     await assert.rejects(validateNameAndResourceLength(packageJSON));
   });
 
@@ -148,7 +148,7 @@ describe('Test name and resource length', async () => {
         },
       },
     };
-    // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+    // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
     await assert.rejects(validateNameAndResourceLength(packageJSON));
   });
 

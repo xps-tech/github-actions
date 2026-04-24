@@ -25,7 +25,7 @@ async function postSlackMessage(slackMessage: SlackMessage): Promise<void> {
       'SLACK_PUBLISH_MISMATCH environment variable is required',
     );
     log('slack HTTP POST request options: ', JSON.stringify(slackMessage));
-    // eslint-disable-next-line @checkdigit/require-service-call-response-declaration
+    // eslint-disable-next-line @xps-tech/require-service-call-response-declaration
     await fetch(slackUrl, {
       method: 'POST',
       body: JSON.stringify(slackMessage),

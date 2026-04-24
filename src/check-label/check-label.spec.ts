@@ -22,7 +22,7 @@ async function createContext(prNumber: number) {
 describe('check label', async () => {
   it('Test with no labels throws correctly', async () => {
     // assert that the call to checkLabel rejects a promise
-    // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+    // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
     await assert.rejects(checkLabel());
   });
 
@@ -142,7 +142,7 @@ describe('check label', async () => {
         if (success) {
           await assert.doesNotReject(checkLabel());
         } else {
-          // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+          // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
           await assert.rejects(checkLabel());
         }
       } finally {

@@ -51,7 +51,7 @@ describe('package', async () => {
       path.join(workFolder, 'package.json'),
       JSON.stringify({ name: 'testpackage', version: '1.2.10' }),
     );
-    // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+    // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
     await assert.rejects(
       packageJSONUpdate(workFolder),
       '[Error: package.json does not have a files: [] property]',

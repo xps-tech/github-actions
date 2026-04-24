@@ -55,11 +55,11 @@ describe('copy', async () => {
     );
     assert.equal(file3, 'actiontestv2.yml');
 
-    // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+    // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
     await assert.rejects(
       fs.readFile(path.join(destinationDirectory, 'api/v1/test.ts'), 'utf8'),
     );
-    // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+    // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
     await assert.rejects(
       fs.readFile(path.join(destinationDirectory, 'api/v2/test2.ts'), 'utf8'),
     );

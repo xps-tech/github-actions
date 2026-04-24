@@ -1,6 +1,6 @@
 // check-imports/package-lock-file-util.ts
 
-// eslint-disable-next-line @checkdigit/no-util, unicorn/prevent-abbreviations
+// eslint-disable-next-line @xps-tech/no-util, unicorn/prevent-abbreviations
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 

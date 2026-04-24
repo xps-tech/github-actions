@@ -5,7 +5,7 @@
  * https://github.com/romeovs/lcov-reporter-action
  */
 
-// eslint-disable-next-line @checkdigit/no-util
+// eslint-disable-next-line @xps-tech/no-util
 import { strict as assert } from 'node:assert';
 import { describe, it } from 'node:test';
 

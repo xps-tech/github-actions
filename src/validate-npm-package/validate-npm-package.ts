@@ -95,7 +95,7 @@ export default async function (): Promise<void> {
   const packageNameAndBetaVersion = getInput('betaPackage');
   log('packageNameAndBetaVersion', packageNameAndBetaVersion);
 
-  // eslint-disable-next-line @checkdigit/no-random-v4-uuid
+  // eslint-disable-next-line @xps-tech/no-random-v4-uuid
   const workFolder = path.join(os.tmpdir(), crypto.randomUUID());
   await fs.mkdir(workFolder);
   log('temporary work folder created', workFolder);

@@ -1,6 +1,6 @@
 // check-imports/package-lock-file-util.spec.ts
 
-// eslint-disable-next-line @checkdigit/no-util
+// eslint-disable-next-line @xps-tech/no-util
 import { strict as assert } from 'node:assert';
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
@@ -24,7 +24,7 @@ describe('package lock file utilities', async () => {
       JSON.stringify(examplePackageLock),
     );
     const packageLock = await getPackageLock(workFolder);
-    assert.ok(packageLock.name === '@checkdigit/github-actions');
+    assert.ok(packageLock.name === '@xps-tech/github-actions');
   });
 
   it('can get the package name from a package-lock packages key', () => {

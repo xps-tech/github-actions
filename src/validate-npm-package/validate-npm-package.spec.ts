@@ -17,7 +17,7 @@ describe('validate-npm-package', async () => {
   it('successfully verify good npm package', { timeout: 300_000 }, async () => {
     getInputMock.mock.mockImplementationOnce((name: string) => {
       if (name === 'betaPackage') {
-        return '@checkdigit/approval@2.0.3';
+        return '@xps-tech/approval@2.0.3';
       }
       return '';
     });
@@ -31,7 +31,7 @@ describe('validate-npm-package', async () => {
     async () => {
       getInputMock.mock.mockImplementationOnce((name) => {
         if (name === 'betaPackage') {
-          return '@checkdigit/test-checkdigit@3.4.1-PR.134-31bc';
+          return '@xps-tech/test-checkdigit@3.4.1-PR.134-31bc';
         }
         return '';
       });
@@ -46,7 +46,7 @@ describe('validate-npm-package', async () => {
     async () => {
       getInputMock.mock.mockImplementationOnce((name) => {
         if (name === 'betaPackage') {
-          return '@checkdigit/prettier-config@8.0.0';
+          return '@xps-tech/prettier-config@8.0.0';
         }
         return '';
       });
@@ -61,7 +61,7 @@ describe('validate-npm-package', async () => {
     async () => {
       getInputMock.mock.mockImplementationOnce((name) => {
         if (name === 'betaPackage') {
-          return '@checkdigit/connector@4.0.2-PR.141-c066';
+          return '@xps-tech/connector@4.0.2-PR.141-c066';
         }
         return '';
       });
@@ -77,7 +77,7 @@ describe('validate-npm-package', async () => {
   it('bad npm package results in error', { timeout: 300_000 }, async () => {
     getInputMock.mock.mockImplementationOnce((name) => {
       if (name === 'betaPackage') {
-        return '@checkdigit/approval@2.0.0-PR.196-b041';
+        return '@xps-tech/approval@2.0.0-PR.196-b041';
       }
       return '';
     });

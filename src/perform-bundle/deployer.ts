@@ -10,7 +10,7 @@ const log = debug('github-actions:perform-bundle:deployer');
 
 export default async function (): Promise<void> {
   log('Install deployer');
-  await execAsync('npm install @checkdigit/deployer');
+  await execAsync('npm install @xps-tech/deployer');
   log('Install deployer complete');
   log('Execute deployer');
   await execAsync('export AWS_REGION=us-east-1 && npx deploy stage:lambda');

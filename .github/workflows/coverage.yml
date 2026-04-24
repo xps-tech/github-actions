@@ -38,7 +38,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN_PUBLISH }}
       - name: Post Coverage Report
-        uses: checkdigit/github-actions/coverage-reporter@main
+        uses: xps-tech/github-actions/coverage-reporter@main
         with:
           coverage-results-folder-pr: 'coverage-pr'
           coverage-results-folder-base: 'coverage'

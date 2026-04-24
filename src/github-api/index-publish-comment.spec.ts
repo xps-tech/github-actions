@@ -8,7 +8,7 @@ import { publishCommentAndRemovePrevious } from './index.ts';
 
 describe('github publish', async () => {
   it('no token', async () => {
-    // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+    // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
     await assert.rejects(
       publishCommentAndRemovePrevious(crypto.randomUUID(), crypto.randomUUID()),
     );
@@ -17,7 +17,7 @@ describe('github publish', async () => {
   it('no event path', async () => {
     process.env['GITHUB_TOKEN'] =
       'token 0000000000000000000000000000000000000001';
-    // eslint-disable-next-line @checkdigit/require-assert-predicate-rejects-throws
+    // eslint-disable-next-line @xps-tech/require-assert-predicate-rejects-throws
     await assert.rejects(
       publishCommentAndRemovePrevious(crypto.randomUUID(), crypto.randomUUID()),
     );

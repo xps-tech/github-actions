@@ -3,7 +3,7 @@
 import debug from 'debug';
 import { setFailed } from '@actions/core';
 
-import { differenceInCalendarDays } from '@checkdigit/time';
+import { differenceInCalendarDays } from '@xps-tech/time';
 
 import {
   approvedReviews,
