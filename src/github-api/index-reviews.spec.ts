@@ -3,7 +3,7 @@
 import { strict as assert } from 'node:assert';
 import { describe, it } from 'node:test';
 
-import { differenceInCalendarDays } from '@xps-tech/time';
+import { differenceInCalendarDays } from '@checkdigit/time';
 
 import gitHubNock, { createGithubEventFile } from '../nocks/github.test.ts';
 import { approvedReviews, haveAllReviewersReviewed } from './index.ts';

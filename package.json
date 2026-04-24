@@ -29,19 +29,19 @@
     "prettier:fix": "prettier --ignore-path .gitignore --write .",
     "test": "npm run ci:compile && npm run ci:test && npm run ci:lint && npm run ci:style"
   },
-  "prettier": "@xps-tech/prettier-config",
+  "prettier": "@checkdigit/prettier-config",
   "dependencies": {
     "@actions/core": "^3.0.0",
     "@actions/github": "^9.0.0",
-    "@xps-tech/time": "^5.0.0",
+    "@checkdigit/time": "^5.0.0",
     "@octokit/rest": "^22.0.1",
     "debug": "^4.4.3",
     "semver": "^7.7.4"
   },
   "devDependencies": {
-    "@xps-tech/eslint-config": "^11.6.1",
-    "@xps-tech/prettier-config": "^8.0.0",
-    "@xps-tech/typescript-config": "^10.0.1",
+    "@checkdigit/eslint-config": "^11.6.1",
+    "@checkdigit/prettier-config": "^8.0.0",
+    "@checkdigit/typescript-config": "^10.0.1",
     "@types/debug": "^4.1.13",
     "@types/semver": "^7.7.1",
     "nock": "^14.0.11",

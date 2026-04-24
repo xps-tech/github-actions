@@ -47,7 +47,7 @@ export default async function (): Promise<void> {
       getInput('delete-old-comments').toLowerCase() === 'true';
     const title = getInput('title');
 
-    // eslint-disable-next-line @xps-tech/no-promise-instance-method
+    // eslint-disable-next-line @checkdigit/no-promise-instance-method
     const raw = await fs.readFile(prLcovFile, 'utf8').catch(() => null);
     if (raw === null || raw === '') {
       // eslint-disable-next-line no-console
