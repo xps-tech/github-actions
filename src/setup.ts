@@ -16,4 +16,5 @@ if (token) {
 }
 
 await exec('npm ci', { cwd });
-await exec('npm run build:dist-mjs', { cwd });
+// build:dist-mjs is skipped: action.yml uses node24 which runs TypeScript natively
+// via --experimental-strip-types, so pre-compilation is not required.
